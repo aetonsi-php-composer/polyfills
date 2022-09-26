@@ -1,0 +1,21 @@
+{
+    "name": "aetonsi/polyfills",
+    "description": "various polyfills",
+    "version": "0.0.1",
+    "type": "library",
+    "require": {
+        "php": ">=4"
+    },
+    "license": "WTFPL",
+    "authors": [
+        {
+            "name": "aetonsi",
+            "email": "18366087+aetonsi@users.noreply.github.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/polyfills.php"
+        ]
+    }
+}
