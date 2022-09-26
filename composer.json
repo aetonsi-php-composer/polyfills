@@ -1,7 +1,6 @@
 {
     "name": "aetonsi/polyfills",
     "description": "various polyfills",
-    "version": "0.2.0",
     "type": "library",
     "require": {
         "php": ">=5.1"
