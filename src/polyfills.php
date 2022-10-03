@@ -11,12 +11,25 @@ if (!\defined('PHP_VERSION_ID')) {
 }
 
 
-/**
- * Polyfill for \random_int().
- *
- * @see https://www.php.net/manual/en/function.random-int.php#119670
- */
+if (!function_exists('intdiv')) {
+    /**
+     * Polyfill for \intdiv().
+     *
+     * @see https://www.php.net/manual/en/function.intdiv.php#117626
+     */
+    function intdiv($a, $b)
+    {
+        return ($a - $a % $b) / $b;
+    }
+}
+
+
 if (!function_exists('random_int')) {
+    /**
+     * Polyfill for \random_int().
+     *
+     * @see https://www.php.net/manual/en/function.random-int.php#119670
+     */
     function random_int($min, $max)
     {
         if (!function_exists('mcrypt_create_iv')) {
