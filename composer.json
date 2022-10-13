@@ -3,7 +3,21 @@
     "description": "various polyfills",
     "type": "library",
     "require": {
-        "php": ">=5.1"
+        "php": ">=5.4.45",
+        "symfony/polyfill-mbstring": "^1.19",
+        "symfony/polyfill-php54": "^1.19",
+        "symfony/polyfill-php55": "^1.19",
+        "symfony/polyfill-php56": "^1.19",
+        "symfony/polyfill-php70": "^1.19",
+        "symfony/polyfill-php71": "^1.19",
+        "symfony/polyfill-php72": "^1.19",
+        "symfony/polyfill-php73": "^1.19",
+        "symfony/polyfill-php74": "^1.19"
+    },
+    "config": {
+        "platform": {
+            "php": "5.4.45"
+        }
     },
     "license": "WTFPL",
     "authors": [
